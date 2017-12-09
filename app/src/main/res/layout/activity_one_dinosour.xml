@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="Dinosour name ?"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/mosasauras"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/mosasaurus_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="16dp"
+        android:text="Mosasaurus" />
+
+    <Button
+        android:id="@+id/apatosaurus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignTop="@+id/mosasaurus_button"
+        android:text="Apatosaurus"
+        android:layout_toRightOf="@+id/mosasaurus_button"
+        android:layout_toEndOf="@+id/mosasaurus_button" />
+
+    <Button
+        android:id="@+id/dimorphodon_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mosasaurus_button"
+        android:layout_alignStart="@+id/mosasaurus_button"
+        android:layout_below="@+id/mosasaurus_button"
+        android:layout_marginTop="23dp"
+        android:text="Dimorphodon" />
+
+    <Button
+        android:id="@+id/pteranodon_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/apatosaurus_button"
+        android:layout_alignRight="@+id/apatosaurus_button"
+        android:layout_alignTop="@+id/dimorphodon_button"
+        android:text="Pteranodon"
+        android:layout_toRightOf="@+id/dimorphodon_button"
+        android:layout_toEndOf="@+id/dimorphodon_button" />
+
+</RelativeLayout>
