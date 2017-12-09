@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/b2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -16,8 +17,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="18dp"
         android:gravity="center"
-        android:text="Dinosour name ?"
-        android:textSize="30dp" />
+        android:text="3.Dinosour name ?"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,7 +37,8 @@
         android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="16dp"
-        android:text="mosasauras" />
+        android:text="mosasauras"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/camarasaurus_button3"
@@ -46,7 +49,8 @@
         android:layout_alignTop="@+id/mosasauras_button3"
         android:layout_toEndOf="@+id/mosasauras_button3"
         android:layout_toRightOf="@+id/mosasauras_button3"
-        android:text="camarasaurus" />
+        android:text="camarasaurus"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/apatosaurus_button3"
@@ -56,7 +60,8 @@
         android:layout_alignStart="@+id/mosasauras_button3"
         android:layout_below="@+id/mosasauras_button3"
         android:layout_marginTop="23dp"
-        android:text="apatosaurus" />
+        android:text="apatosaurus"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/tyrannosaurusrex_button3"
@@ -67,6 +72,7 @@
         android:layout_alignTop="@+id/apatosaurus_button3"
         android:layout_toEndOf="@+id/apatosaurus_button3"
         android:layout_toRightOf="@+id/apatosaurus_button3"
-        android:text="Tyrannosaurus rex" />
+        android:text="Tyrannosaurus rex"
+        android:textStyle="bold" />
 
 </RelativeLayout>

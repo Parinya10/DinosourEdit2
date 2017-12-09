@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/b2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -16,8 +17,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="18dp"
         android:gravity="center"
-        android:text="Dinosour name ?"
-        android:textSize="30dp" />
+        android:text="2.Dinosour name ?"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,7 +37,8 @@
         android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="16dp"
-        android:text="carnotaurus" />
+        android:text="carnotaurus"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/dimorphodon_button2"
@@ -46,7 +49,8 @@
         android:layout_alignTop="@+id/carnotaurus_button2"
         android:layout_toEndOf="@+id/carnotaurus_button2"
         android:layout_toRightOf="@+id/carnotaurus_button2"
-        android:text="dimorphodon" />
+        android:text="dimorphodon"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/camarasaurus_button2"
@@ -56,7 +60,8 @@
         android:layout_alignStart="@+id/carnotaurus_button2"
         android:layout_below="@+id/carnotaurus_button2"
         android:layout_marginTop="23dp"
-        android:text="camarasaurus" />
+        android:text="camarasaurus"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/pteranodon_button2"
@@ -65,8 +70,9 @@
         android:layout_alignEnd="@+id/dimorphodon_button2"
         android:layout_alignRight="@+id/dimorphodon_button2"
         android:layout_alignTop="@+id/camarasaurus_button2"
-        android:text="Pteranodon"
+        android:layout_toEndOf="@+id/camarasaurus_button2"
         android:layout_toRightOf="@+id/camarasaurus_button2"
-        android:layout_toEndOf="@+id/camarasaurus_button2" />
+        android:text="Pteranodon"
+        android:textStyle="bold" />
 
 </RelativeLayout>

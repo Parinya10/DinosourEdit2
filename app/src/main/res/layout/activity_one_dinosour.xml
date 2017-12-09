@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/b2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -16,8 +17,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="18dp"
         android:gravity="center"
-        android:text="Dinosour name ?"
-        android:textSize="30dp" />
+        android:text="1.Dinosour name ?"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,7 +37,8 @@
         android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="16dp"
-        android:text="Mosasaurus" />
+        android:text="Mosasaurus"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/apatosaurus_button"
@@ -44,9 +47,10 @@
         android:layout_alignEnd="@+id/imageView"
         android:layout_alignRight="@+id/imageView"
         android:layout_alignTop="@+id/mosasaurus_button"
-        android:text="Apatosaurus"
+        android:layout_toEndOf="@+id/mosasaurus_button"
         android:layout_toRightOf="@+id/mosasaurus_button"
-        android:layout_toEndOf="@+id/mosasaurus_button" />
+        android:text="Apatosaurus"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/dimorphodon_button"
@@ -56,7 +60,8 @@
         android:layout_alignStart="@+id/mosasaurus_button"
         android:layout_below="@+id/mosasaurus_button"
         android:layout_marginTop="23dp"
-        android:text="Dimorphodon" />
+        android:text="Dimorphodon"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/pteranodon_button"
@@ -65,8 +70,9 @@
         android:layout_alignEnd="@+id/apatosaurus_button"
         android:layout_alignRight="@+id/apatosaurus_button"
         android:layout_alignTop="@+id/dimorphodon_button"
-        android:text="Pteranodon"
+        android:layout_toEndOf="@+id/dimorphodon_button"
         android:layout_toRightOf="@+id/dimorphodon_button"
-        android:layout_toEndOf="@+id/dimorphodon_button" />
+        android:text="Pteranodon"
+        android:textStyle="bold" />
 
 </RelativeLayout>

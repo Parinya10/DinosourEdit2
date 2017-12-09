@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/a021"
     tools:context="com.example.user.dinosour.TwelveDinosour">
 
 
@@ -16,8 +17,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp"
+        android:textColor="#504d4d"
+        android:text="High score!!!"
         android:textSize="50dp"
-        android:text="High score!!!" />
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/list_score"
@@ -34,7 +37,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="26dp"
-        android:text="Back" />
+        android:text="Back"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

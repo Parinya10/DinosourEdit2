@@ -39,8 +39,8 @@ public class ElevenDinosour extends AppCompatActivity {
                 name = String.valueOf(editText.getText().toString());
                 if (name.length() == 0) {
                     editText.setError("ป้อนชื่อ");
-                } else if(name.length()>=8){
-                    editText.setError("ความยาวชื่อต้องน้อยกว่า 8 ตัวอักษร");
+                } else if(name.length()>=16){
+                    editText.setError("ความยาวชื่อต้องน้อยกว่า 16 ตัวอักษร");
                 }else{
                     ContentValues cv = new ContentValues();
                     cv.put(COL_NAME, name);

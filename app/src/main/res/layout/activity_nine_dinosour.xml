@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/b2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -16,8 +17,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="18dp"
         android:gravity="center"
-        android:text="Dinosour name ?"
-        android:textSize="30dp" />
+        android:text="9.Dinosour name ?"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,7 +37,8 @@
         android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="16dp"
-        android:text="triceratops" />
+        android:text="triceratops"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/velociraptor_button9"
@@ -46,7 +49,8 @@
         android:layout_alignTop="@+id/triceratops_button9"
         android:layout_toEndOf="@+id/triceratops_button9"
         android:layout_toRightOf="@+id/triceratops_button9"
-        android:text="velociraptor" />
+        android:text="velociraptor"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/pteranodon_button9"
@@ -56,17 +60,20 @@
         android:layout_alignStart="@+id/triceratops_button9"
         android:layout_below="@+id/triceratops_button9"
         android:layout_marginTop="23dp"
-        android:text="pteranodon" />
+        android:text="pteranodon"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/parasaurolophus_button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pteranodon_button9"
         android:layout_alignEnd="@+id/velociraptor_button9"
         android:layout_alignRight="@+id/velociraptor_button9"
         android:layout_alignTop="@+id/pteranodon_button9"
         android:layout_toEndOf="@+id/pteranodon_button9"
         android:layout_toRightOf="@+id/pteranodon_button9"
-        android:text="parasaurolophus" />
+        android:text="parasaurolophus"
+        android:textStyle="bold" />
 
 </RelativeLayout>

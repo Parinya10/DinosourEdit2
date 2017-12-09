@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/b2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -16,8 +17,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="18dp"
         android:gravity="center"
-        android:text="Dinosour name ?"
-        android:textSize="30dp" />
+        android:text="7.Dinosour name ?"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,7 +37,8 @@
         android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="16dp"
-        android:text="pteranodon" />
+        android:text="pteranodon"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/triceratops_button7"
@@ -46,7 +49,8 @@
         android:layout_alignTop="@+id/pteranodon_button7"
         android:layout_toEndOf="@+id/pteranodon_button7"
         android:layout_toRightOf="@+id/pteranodon_button7"
-        android:text="triceratops" />
+        android:text="triceratops"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/mosasaurus_button7"
@@ -56,7 +60,8 @@
         android:layout_alignStart="@+id/pteranodon_button7"
         android:layout_below="@+id/pteranodon_button7"
         android:layout_marginTop="23dp"
-        android:text="mosasaurus" />
+        android:text="mosasaurus"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/ankylosaurus_button7"
@@ -67,6 +72,7 @@
         android:layout_alignTop="@+id/mosasaurus_button7"
         android:layout_toEndOf="@+id/mosasaurus_button7"
         android:layout_toRightOf="@+id/mosasaurus_button7"
-        android:text="ankylosaurus" />
+        android:text="ankylosaurus"
+        android:textStyle="bold" />
 
 </RelativeLayout>
