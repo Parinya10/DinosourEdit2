@@ -7,12 +7,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper{
     private static final String DATABASE_NAME = "high.score";
-    private static final int DATABASE_VERSION = 102;
-    public static final String TABLE_NAME_HARD = "score";
+    private static final int DATABASE_VERSION = 1202;
+    public static final String TABLE_NAME_HIGHSCORE= "highscores";
     public static final String COL_ID = "_id";
     public static final String COL_NAME = "name";
     public static final String COL_SCORE = "score";
-    private static final String CREATE_TABLE_HARD = "CREATE TABLE " + TABLE_NAME_HARD + "("
+    private static final String CREATE_TABLE_HIGHSCORE = "CREATE TABLE " + TABLE_NAME_HIGHSCORE + "("
             + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + COL_NAME + " TEXT, "
             + COL_SCORE + " INTEGER)";
@@ -21,37 +21,43 @@ public class DBHelper extends SQLiteOpenHelper{
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CREATE_TABLE_HARD);
+        db.execSQL(CREATE_TABLE_HIGHSCORE);
         insertInitialData(db);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_HARD);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_HIGHSCORE);
         onCreate(db);
     }
 
     private void insertInitialData(SQLiteDatabase db) {
+
         ContentValues cv = new ContentValues();
         cv.put(COL_NAME, "PETER");
-        cv.put(COL_SCORE, 1);
-        db.insert(TABLE_NAME_HARD, null, cv);
+        cv.put(COL_SCORE, 2);
+        db.insert(TABLE_NAME_HIGHSCORE, null, cv);
         cv = new ContentValues();
         cv.put(COL_NAME, "CHESTER");
-        cv.put(COL_SCORE, 1);
-        db.insert(TABLE_NAME_HARD, null, cv);
+        cv.put(COL_SCORE, 3);
+        db.insert(TABLE_NAME_HIGHSCORE, null, cv);
         cv = new ContentValues();
         cv.put(COL_NAME, "GRILL");
         cv.put(COL_SCORE, 1);
-        db.insert(TABLE_NAME_HARD, null, cv);
+        db.insert(TABLE_NAME_HIGHSCORE, null, cv);
         cv = new ContentValues();
         cv.put(COL_NAME, "CRYSTAL");
         cv.put(COL_SCORE, 2);
-        db.insert(TABLE_NAME_HARD, null, cv);
+        db.insert(TABLE_NAME_HIGHSCORE, null, cv);
+        cv = new ContentValues();
+        cv.put(COL_NAME, "ALEX");
+        cv.put(COL_SCORE, 1);
+        db.insert(TABLE_NAME_HIGHSCORE, null, cv);
         cv = new ContentValues();
         cv.put(COL_NAME, "DELL");
         cv.put(COL_SCORE, 2);
-        db.insert(TABLE_NAME_HARD, null, cv);
+        db.insert(TABLE_NAME_HIGHSCORE, null, cv);
+
   }
 
 }

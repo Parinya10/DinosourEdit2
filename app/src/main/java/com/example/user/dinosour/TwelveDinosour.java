@@ -29,7 +29,7 @@ public class TwelveDinosour extends AppCompatActivity {
         mHelper = new DBHelper(this);
         mDb = mHelper.getReadableDatabase();
         final Button buttonBack = (Button)findViewById(R.id.back_button);
-        Cursor cursor = mDb.query(DBHelper.TABLE_NAME_HARD,null,null,null,null,null,COL_SCORE+ " DESC");
+        Cursor cursor = mDb.query(DBHelper.TABLE_NAME_HIGHSCORE,null,null,null,null,null,COL_SCORE+ " DESC");
         int  i = 1;
         while (cursor.moveToNext()) {
             if(i>10) break;

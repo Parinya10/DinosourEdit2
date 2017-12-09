@@ -45,7 +45,7 @@ public class ElevenDinosour extends AppCompatActivity {
                     ContentValues cv = new ContentValues();
                     cv.put(COL_NAME, name);
                     cv.put(COL_SCORE, score);
-                    mDb.insert(DBHelper.TABLE_NAME_HARD,null,cv);
+                    mDb.insert(DBHelper.TABLE_NAME_HIGHSCORE,null,cv);
                     Intent intentToHighScore = new Intent(ElevenDinosour.this, TwelveDinosour.class);
                     startActivity(intentToHighScore);
                 }
